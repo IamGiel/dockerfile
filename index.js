@@ -4,7 +4,7 @@ const app = express();
 const port = 8080;
 
 app.get('/', function (req, res) {
-    res.send(`'<h1>' + 'HELLO  ${process.platform}' + '</h1>'`);
+    res.send(`'HELLO  ${process.platform}' it is ${new Date()}`);
 })
 
 app.listen(port, function () {
